@@ -134,7 +134,7 @@ class Opfor {
 	};
 };
 
-
+/*
 class UN {
     class AllUnits {
         uniform = "";
@@ -171,8 +171,10 @@ class UN {
         watch = "";
         radio = "";
     };
+
 class Type {
-        class Soldier_SL_F {
+        class Soldier_SL_F 
+        {
             uniform = "rhssaf_uniform_m10_digital_desert";
             vest = "LOP_V_6B23_6Sh92_UN";
             backpack = "";
@@ -202,8 +204,8 @@ class Type {
             };
         };
 
-class Type {
-        class B_Soldier_SL_F {
+
+        class Soldier_SL_F {
             uniform = "rhssaf_uniform_m10_digital_desert";
             vest = "LOP_V_Carrier_BLK";
             backpack = "";
@@ -226,3 +228,4 @@ class Type {
         };
     };
 };
+*/
