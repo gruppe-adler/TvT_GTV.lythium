@@ -39,7 +39,7 @@ class Opfor {
         radio = "";
     };
     class Type {
-        class LOP_ISTS_OPF_Infantry_Rifleman_6 {
+        class O_Soldier_A_F {
             uniform = "LOP_U_AM_Fatigue_04";
             vest = "rhs_6sh92_vsr_vog";
             backpack = "";
@@ -56,10 +56,8 @@ class Opfor {
             addItemsToUniform[] = {
                 LIST_7("rhsgref_25Rnd_792x33_SmE_StG")
             };
-        };
-    };
-    class Type {
-        class LOP_ISTS_OPF_Infantry_Rifleman {
+    
+        class O_Soldier_AAR_F {
             uniform = "LOP_U_AM_Fatigue_03";
             vest = "rhs_6sh92_vog";
             backpack = "C_IDAP_UAV_01_backpack_F";
@@ -81,10 +79,7 @@ class Opfor {
             addItemsToVest[] = {
                 LIST_2("rhs_30Rnd_545x39_7N6M_AK")
             };
-        };
-    };
-    class Type {
-        class LOP_ISTS_OPF_Infantry_Rifleman_3 {
+        class O_support_AMG_F {
             uniform = "LOP_U_TAK_Civ_Fatigue_16";
             vest = "LOP_6sh46";
             backpack = "";
@@ -104,10 +99,7 @@ class Opfor {
             addItemsToVest[] = {
                 LIST_4("rhsgref_30rnd_1143x23_M1911B_SMG")
             };
-        };
-    };
-	class Type {
-        class LOP_ISTS_OPF_Infantry_AT {
+        class O_support_AMort_F {
             uniform = "LOP_U_AM_Fatigue_04";
             vest = "rhs_6sh92_vsr_vog";
             backpack = "";
@@ -135,8 +127,8 @@ class Opfor {
                 LIST_1("rhs_panzerfaust60_mag"),
                 LIST_3("rhs_mag_9x18_8_57N181S")
             };
-        };
-    };
+		};
+	};
 };
 
 
@@ -205,8 +197,7 @@ class Type {
                 LIST_1("rhssaf_mag_brd_m83_blue"),
                 LIST_1("rhssaf_mag_brd_m83_green")
             };
-        };
-    };
+
 class Type {
         class B_Soldier_SL_F {
             uniform = "rhssaf_uniform_m10_digital_desert";
