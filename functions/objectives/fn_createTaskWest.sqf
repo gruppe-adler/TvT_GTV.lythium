@@ -11,4 +11,5 @@ diag_log ["_taskDescription",_taskDescription];
 
 [WEST,_taskID,[_taskDescription,_taskTitle,""],_taskDestination,"AUTOASSIGNED",1,false,_taskType,false] call BIS_fnc_taskCreate;
 
-_trigger setVariable [QGVAR(taskWest),_taskID,true];
+_trigger setVariable [QGVAR(taskWest),_taskID,false];
+_trigger setVariable [QGVAR(taskTitleWest),_taskTitle,false];
