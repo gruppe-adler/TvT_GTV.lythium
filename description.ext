@@ -21,6 +21,12 @@ enableDebugConsole[] = {
 	"76561197961080101"
 };
 
+class Header
+{
+	gameType =  TDM;			// Game type
+	minPlayers =  1;			// minimum number of players the mission supports
+	maxPlayers = 99;			// maximum number of players the mission supports
+};
 
 //MISC =========================================================================
 #include "cfgParams.hpp"
