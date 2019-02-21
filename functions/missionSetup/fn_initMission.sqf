@@ -1,29 +1,31 @@
 #include "component.hpp"
 
-grad_missionsettings_canTakeEnemyRadios = ([missionConfigFile >> "missionsettings","canTakeEnemyRadios",0] call BIS_fnc_returnConfigEntry) == 1;
-grad_missionsettings_canUseScopes = ([missionConfigFile >> "missionsettings","canUseScopes",0] call BIS_fnc_returnConfigEntry) == 1;
+EGVAR(missionsettings,canTakeEnemyRadios) = ([missionConfigFile >> "cfgMission","canTakeEnemyRadios",0] call BIS_fnc_returnConfigEntry) == 1;
+EGVAR(missionsettings,canUseScopes) = ([missionConfigFile >> "cfgMission","canUseScopes",0] call BIS_fnc_returnConfigEntry) == 1;
+EGVAR(missionSettings,loadoutFactionBlu) = [missionConfigFile >> "cfgMission", "loadoutFactionBlu",""] call BIS_fnc_returnConfigEntry;
+EGVAR(missionSettings,loadoutFactionOpf) = [missionConfigFile >> "cfgMission", "loadoutFactionOpf",""] call BIS_fnc_returnConfigEntry;
 
-[] call grad_missionSetup_fnc_loadouts;
-[] call grad_missionSetup_fnc_createDiaryRecords;
-[] call grad_missionSetup_fnc_intro;
-[] call grad_missionSetup_fnc_initCivs;
-[] call grad_groupsettings_fnc_setGroupSettings;
-if (!isServer) then {[] call GRAD_replay_fnc_init};
+[] call EFUNC(missionSetup,intro);
+[] call EFUNC(groupsettings,setGroupSettings);
+
+[] call grad_civs_fnc_initModule;
+
+["BLU_F", EGVAR(missionSettings,loadoutFactionBlu)] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_F", EGVAR(missionSettings,loadoutFactionOpf)] call GRAD_Loadout_fnc_FactionSetLoadout;
+
 
 [{!isNull player || isDedicated},{
 
     if (isServer) then {
-        [["PREPARATION_TIME", 0] call BIS_fnc_getParamValue] call grad_missionSetup_fnc_startPreparationTime;
-        [{CBA_missionTime > 10 && {missionNamespace getVariable ["GRAD_MISSIONSTARTED",false]}}, {
-            [] call grad_endings_fnc_init;
-            [] call GRAD_replay_fnc_init;
+        [["PREPARATION_TIME", 0] call BIS_fnc_getParamValue] call FUNC(startPreparationTime);
+        [{CBA_missionTime > 10 && {missionNamespace getVariable ["GTV_MISSIONSTARTED",false]}}, {
+            [] call grad_replay_fnc_init;
         }, []] call CBA_fnc_waitUntilAndExecute;
+    } else {
+        [] call grad_replay_fnc_init;
     };
 
     setViewDistance 3000;
     setObjectViewDistance 2500;
 
-    if (hasInterface) then {
-        
-    };
 },[]] call CBA_fnc_waitUntilAndExecute;

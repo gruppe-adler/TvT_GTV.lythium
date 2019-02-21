@@ -11,6 +11,6 @@ private _area = _triggers select 0;
 
 if (!hasInterface) exitWith {};
 
-[{missionNamespace getVariable ["GRAD_MISSIONSTARTED",false]}, {
-    [_this] call grad_common_fnc_restrictZonePFH;
+[{missionNamespace getVariable ["GTV_MISSIONSTARTED",false]}, {
+    [_this] call FUNC(restrictZonePFH);
 }, _area] call CBA_fnc_waitUntilAndExecute;

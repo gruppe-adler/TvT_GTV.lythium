@@ -6,6 +6,4 @@ class Params
         texts[] = {"off","1min","2min","3min","4min","5min","8min","10min","15min"};
         default = 0;
     };
-
-    #include "USER\userParams.hpp"
 };

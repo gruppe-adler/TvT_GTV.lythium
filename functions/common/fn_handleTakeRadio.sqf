@@ -1,6 +1,6 @@
 #include "component.hpp"
 
-if (grad_missionsettings_canTakeEnemyRadios) exitWith {};
+if (EGVAR(missionSettings,canTakeEnemyRadios)) exitWith {};
 
 params ["_unit","_container","_item"];
 
@@ -11,11 +11,10 @@ if (!_isHandheld && !_isLongrange) exitWith {};
 
 _item = [configFile >> "CfgWeapons" >> _item,"tf_parent",_item] call BIS_fnc_returnConfigEntry;
 
-if (isNil {_unit getVariable "grad_unitAllowedRadios"}) then {_unit setVariable ["grad_unitAllowedRadios",[_unit] call grad_common_fnc_getAllowedRadios]};
-private _allowedRadios = _unit getVariable ["grad_unitAllowedRadios",[]];
+if (isNil {_unit getVariable "gtv_unitAllowedRadios"}) then {_unit setVariable ["gtv_unitAllowedRadios",[_unit] call FUNC(getAllowedRadios)]};
+private _allowedRadios = _unit getVariable ["gtv_unitAllowedRadios",[]];
 
 if (_item in _allowedRadios) exitWith {};
-
 
 if (_isLongrange) then {
     systemChat "You cannot take this radio.";

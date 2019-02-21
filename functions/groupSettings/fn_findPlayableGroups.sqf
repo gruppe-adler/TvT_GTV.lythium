@@ -1,9 +1,9 @@
 #include "component.hpp"
 #define PLAYABLE_UNITS (playableUnits + switchableUnits)
 
-_blugroups = [];
-_opfgroups = [];
-_indgroups = [];
+private _blugroups = [];
+private _opfgroups = [];
+private _indgroups = [];
 
 {
     if ((leader _x) in PLAYABLE_UNITS) then {

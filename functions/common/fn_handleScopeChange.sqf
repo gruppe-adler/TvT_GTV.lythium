@@ -1,6 +1,6 @@
 #include "component.hpp"
 
-if (grad_missionsettings_canUseScopes) exitWith {};
+if (EGVAR(missionSettings,canUseScopes)) exitWith {};
 
 params ["_unit","_container","_itemType"];
 

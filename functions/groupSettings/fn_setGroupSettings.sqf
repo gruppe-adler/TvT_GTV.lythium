@@ -6,6 +6,7 @@
 
 if (!isServer) exitWith {};
 
-_allgroups = [] call GRAD_groupsettings_fnc_findPlayableGroups;
-[_allGroups] call GRAD_groupsettings_fnc_setDynamicGroupNames;
-"groupsettings: groups registered" remoteExec ["systemChat",0,false];
+private _allgroups = [] call FUNC(findPlayableGroups);
+[_allGroups] call FUNC(setDynamicGroupNames);
+
+INFO("groupsettings: groups registered");
