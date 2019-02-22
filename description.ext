@@ -90,7 +90,7 @@ class Loadouts {
 class Extended_Killed_EventHandlers {
     class CAManBase {
         class gtv_common_unitKilled {
-            killed = "_this call gtv_common_fnc_handleUnitKilled";
+            killed = "_this call gtv_objectives_fnc_handleUnitKilled";
         };
     };
 };

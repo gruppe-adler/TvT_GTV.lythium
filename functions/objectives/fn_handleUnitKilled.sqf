@@ -6,7 +6,9 @@ if (!local _unit) exitWith {};
 
 private _dmgSource = _unit getVariable ["ACE_medical_lastDamageSource",_unit];
 private _dmgSide = side (group _dmgSource);
-private _unitSide = if (_unit == player) then {playerSide} else {side (group _unit)};
-private _params = [_unit,_unitSide,player == _unit,_dmgSource,_dmgSide,isPlayer _killer,CBA_missionTime];
 
-// do stuff...
+// VIP killed
+private _vip = missionNamespace getVariable ["gtv_vip",objNull];
+if (!isNull _vip && {_unit == _vip}) exitWith {
+    ["OPFOR WINS!","VIP killed.",WEST] remoteExec [QEFUNC(endings,endMissionServer),2,false];
+};

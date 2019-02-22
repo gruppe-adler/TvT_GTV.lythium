@@ -6,8 +6,7 @@ class gtv_common {
         class getAllowedRadios {};
         class getSideDisplayName {};
         class handleScopeChange {};
-        class handleTakeRadio {};
-        class handleUnitKilled {};
+        class handleTakeRadio {};        
         class restrictZone {};
         class restrictZonePFH {};
     };
