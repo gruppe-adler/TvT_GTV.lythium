@@ -1,6 +1,7 @@
 class gtv_objectives {
     class objectives {
         class activateTrigger {};
+        class checkOpfKilled {};
         class createBluforBase {};
         class createMarkerEast {};
         class createObjective {};

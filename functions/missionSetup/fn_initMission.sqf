@@ -20,6 +20,7 @@ EGVAR(missionSettings,loadoutFactionOpf) = [missionConfigFile >> "cfgMission", "
         [["PREPARATION_TIME", 0] call BIS_fnc_getParamValue] call FUNC(startPreparationTime);
         [{CBA_missionTime > 10 && {missionNamespace getVariable ["GTV_MISSIONSTARTED",false]}}, {
             [] call grad_replay_fnc_init;
+            [] call EFUNC(objectives,checkOpfKilled);
         }, []] call CBA_fnc_waitUntilAndExecute;
     } else {
         [] call grad_replay_fnc_init;
