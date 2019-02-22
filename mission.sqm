@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1673;
+		nextID=1676;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=318;
+		nextID=338;
 	};
 	class Camera
 	{
-		pos[]={11241.839,79.409683,5538.6226};
-		dir[]={0.12226821,-0.72029728,0.68280572};
-		up[]={0.12696235,0.69366521,0.70902002};
-		aside[]={0.98434347,1.4551915e-009,-0.17626385};
+		pos[]={13973.101,65.046112,3315.6255};
+		dir[]={-0.37000206,-0.59286642,0.71527112};
+		up[]={-0.27239689,0.80529946,0.52658468};
+		aside[]={0.88820255,7.0780516e-008,0.45945778};
 	};
 };
 binarizationWanted=0;
@@ -3819,7 +3819,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=636;
+		items=638;
 		class Item0
 		{
 			dataType="Layer";
@@ -25023,7 +25023,7 @@ class Mission
 						position[]={10781.593,26.03755,3020.3059};
 						angles[]={0.016126843,0,0.0036302849};
 					};
-					init="call{[this,60,""Örtlicher Arzt"",""Örtlichen Arzt medizinische Hilfe zusprechen"",""heal""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,10,""Örtlicher Arzt"",""Örtlichen Arzt medizinische Hilfe zusprechen"",""heal""] call gtv_objectives_fnc_createObjective;}";
 					id=1663;
 					type="Logic";
 				};
@@ -25033,9 +25033,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13804.116,27.0424,2246.2219};
-						angles[]={5.7289124,0,0.47002694};
+						angles[]={5.7289038,0,0.4700346};
 					};
-					init="call{[this,60,""Bürgermeister"",""Aktuelles Drogenproblem in der Region mit dem Bürgermeister besprechen. Man munkelt dieser raucht auch gerne den einen oder anderen joint."",""meet""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,10,""Bürgermeister"",""Aktuelles Drogenproblem in der Region mit dem Bürgermeister besprechen. Man munkelt dieser raucht auch gerne den einen oder anderen Joint."",""meet""] call gtv_objectives_fnc_createObjective;}";
 					id=1667;
 					type="Logic";
 				};
@@ -25044,10 +25044,10 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={14924.269,23.736956,5531.2646};
-						angles[]={6.1060615,0,6.0027733};
+						position[]={14924.269,23.737064,5531.2651};
+						angles[]={6.1060691,0,6.0027804};
 					};
-					init="call{[this,60,""Angehörige"",""Mit Angehörigen sprechen."",""help""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,10,""Angehörige"",""Mit Angehörigen sprechen."",""help""] call gtv_objectives_fnc_createObjective;}";
 					id=1668;
 					type="Logic";
 				};
@@ -25057,9 +25057,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11980.232,21.380308,6362.2422};
-						angles[]={0.044323053,0,6.2822089};
+						angles[]={0.044331361,0,6.282208};
 					};
-					init="call{[this,60,""Fabrik"",""Rede über Wiederaufbauarbeiten halten."",""container""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,10,""Fabrik"",""Rede über Wiederaufbauarbeiten halten."",""container""] call gtv_objectives_fnc_createObjective;}";
 					id=1669;
 					type="Logic";
 				};
@@ -25067,7 +25067,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={10781.666,28.755535,2757.7119};
-					angle=2.8322854;
+					angle=2.8322852;
 					class Attributes
 					{
 						condition="";
@@ -25088,7 +25088,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={11980.72,19.398693,6146.3291};
-					angle=1.2978443;
+					angle=1.2978442;
 					class Attributes
 					{
 						sizeA=4.1999998;
@@ -25142,7 +25142,7 @@ class Mission
 				};
 			};
 			id=1672;
-			atlOffset=14.343373;
+			atlOffset=14.343375;
 		};
 		class Item635
 		{
@@ -25217,16 +25217,44 @@ class Mission
 				nAttributes=3;
 			};
 		};
+		class Item636
+		{
+			dataType="Trigger";
+			position[]={13969.419,19.723991,3407.4194};
+			angle=2.3059814;
+			class Attributes
+			{
+				sizeA=21;
+				sizeB=49;
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=1673;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item637
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13854.28,20.253218,3407.3779};
+				angles[]={0.041957717,0,6.2407212};
+			};
+			init="call{[this,""Zurück zur Basis"",""Eskortieren Sie den VIP sicher zurück zur Basis"",""defend""] call gtv_objectives_fnc_createBluforBase}";
+			id=1674;
+			type="Logic";
+			atlOffset=1.9073486e-006;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=12;
+			nextID=13;
 		};
 		class Links
 		{
-			items=12;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -25342,6 +25370,16 @@ class Mission
 				linkID=11;
 				item0=1671;
 				item1=1669;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=1673;
+				item1=1674;
 				class CustomData
 				{
 					type="Sync";

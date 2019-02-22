@@ -35,3 +35,36 @@ triggerTimeout  | number - Zeit in Sekunden, die der VIP im Trigger bleiben muss
 taskTitle       | string - Titel des zugehörigen Blufor Tasks.
 taskDescription | string - Beschreibung des zugehörigen Blufor Tasks.
 taskType        | string - Type des zugehörigen Blufor Tasks (siehe [Community Wiki](https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul#Task_types)])
+
+#### Beispiel
+
+```sqf
+[this,60,"Bürgermeister","Aktuelles Drogenproblem in der Region mit dem Bürgermeister besprechen. Man munkelt dieser raucht auch gerne den einen oder anderen Joint.","meet"] call gtv_objectives_fnc_createObjective;
+```
+
+### gtv_objectives_fnc_createBluforBase
+
+* Aus Init-Feld einer GameLogic benutzen, die mit einem Trigger synchronisiert ist.
+* Trigger auf "Server only" stellen, sonst keine Einstellungen verändern.
+* Trigger gibt die Area vor, in der der VIP stehen muss, um den Task zu erfüllen.
+
+#### Syntax
+
+```sqf
+[logic,taskTitle,taskDescription,taskType] call gtv_objectives_fnc_createBluforBase
+```
+
+#### Parameter
+
+Parameter       | Erklärung
+----------------|-------------------------------------------------------------------------------------------------------------------------------------------
+logic           | object - Die Spiellogik, aus deren Init-Feld die Funktion ausgeführt wird (`this`).
+taskTitle       | string - Titel des zugehörigen Blufor Tasks.
+taskDescription | string - Beschreibung des zugehörigen Blufor Tasks.
+taskType        | string - Type des zugehörigen Blufor Tasks (siehe [Community Wiki](https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul#Task_types)])
+
+#### Beispiel
+
+```sqf
+[this,"Zurück zur Basis","Eskortieren Sie den VIP sicher zurück zur Basis","defend"] call gtv_objectives_fnc_createBluforBase
+```
