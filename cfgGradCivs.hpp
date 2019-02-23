@@ -19,8 +19,8 @@ class CfgGradCivs {
     onHeldUp = "";                                                                  // Code, der ausgeführt wird, wenn ein Zivilist angehalten wird (Spieler zeigt mit Waffe auf Zivilist)
 
 
-    maxCivsOnFoot = 40;                                                             // maximale Anzahl an Zivilisten zu Fuß
-    maxCivsInVehicles = 15;                                                         // maximale Anzahl an Zivilisten in Fahrzeugen
+    maxCivsOnFoot = 60;                                                             // maximale Anzahl an Zivilisten zu Fuß
+    maxCivsInVehicles = 10;                                                         // maximale Anzahl an Zivilisten in Fahrzeugen
     spawnDistancesOnFoot[] = {1000,2500};                                           // Mindest- und Maximalabstand zu allen Spielern, in denen Zivilisten zu Fuß spawnen
     spawnDistancesInVehicles[] = {1800,4000};                                       // Mindest- und Maximalabstand zu allen Spielern, in denen Zivilisten in Fahrzeugen spawnen
 
