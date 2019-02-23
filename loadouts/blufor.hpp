@@ -55,7 +55,8 @@ class blufor {
             watch = "ItemWatch";
             gps = "ItemGPS";
             radio = "ItemRadio";
-            nvgoggles = "rhsusf_oakley_goggles_clr";
+            goggles = "rhsusf_oakley_goggles_clr";
+            nvgoggles = "";
             addItemsToUniform[] = {
                 LIST_7("rhssaf_30rnd_556x45_EPR_G36"),
                 LIST_2("11Rnd_45ACP_Mag")

@@ -9,8 +9,8 @@ EGVAR(missionSettings,loadoutFactionOpf) = [missionConfigFile >> "cfgMission", "
 
 [] call grad_civs_fnc_initModule;
 
-/* ["BLU_F", EGVAR(missionSettings,loadoutFactionBlu)] call GRAD_Loadout_fnc_FactionSetLoadout;
-["OPF_F", EGVAR(missionSettings,loadoutFactionOpf)] call GRAD_Loadout_fnc_FactionSetLoadout; */
+["BLU_F", EGVAR(missionSettings,loadoutFactionBlu)] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_F", EGVAR(missionSettings,loadoutFactionOpf)] call GRAD_Loadout_fnc_FactionSetLoadout;
 
 if (isServer) then {
     [["PREPARATION_TIME", 0] call BIS_fnc_getParamValue] call FUNC(startPreparationTime);
