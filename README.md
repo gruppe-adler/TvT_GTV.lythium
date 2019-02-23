@@ -17,7 +17,7 @@ Seit kurzem erschwert das Misstrauen der lokalen Bevölkerung der UN Friedensmis
 ### gtv_objectives_fnc_createObjective
 
 * Aus Init-Feld einer GameLogic benutzen, die mit einem Trigger synchronisiert ist.
-* Trigger auf "Server only" stellen, sonst keine Einstellungen verändern.
+* Im Trigger keine Einstellungen verändern.
 * Trigger gibt die Area vor, in der der VIP stehen muss, um den Task zu erfüllen.
 
 #### Syntax
@@ -45,7 +45,7 @@ taskType        | string - Type des zugehörigen Blufor Tasks (siehe [Community 
 ### gtv_objectives_fnc_createBluforBase
 
 * Aus Init-Feld einer GameLogic benutzen, die mit einem Trigger synchronisiert ist.
-* Trigger auf "Server only" stellen, sonst keine Einstellungen verändern.
+* Im Trigger keine Einstellungen verändern.
 * Trigger gibt die Area vor, in der der VIP stehen muss, um den Task zu erfüllen.
 
 #### Syntax

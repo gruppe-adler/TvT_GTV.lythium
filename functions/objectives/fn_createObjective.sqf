@@ -16,10 +16,12 @@ private _vipObjectiveTimeoutCancel = [missionConfigFile >> "cfgMission","vipObje
 if (isNil QGVAR(objectiveTriggers)) then {GVAR(objectiveTriggers) = []};
 
 {
-    [_x,_triggerTimeout,_vipObjectiveTimeoutCancel,_taskTitle,_taskDescription,_taskType] call FUNC(initTrigger);
+    [_x,_triggerTimeout,_vipObjectiveTimeoutCancel,_shotsDetectionRadius,_taskTitle,_taskDescription,_taskType] call FUNC(initTrigger);
     [_x] call FUNC(activateTrigger);
     [_x,"hd_objective"] call FUNC(createMarkerEast);
-    [_x,_shotsDetectionRadius] call FUNC(createShotsDetection);
+    [_x,_shotsDetectionRadius] remoteExec [QFUNC(createCombatDetectionZone),0,true];
 
     GVAR(objectiveTriggers) pushBack _x;
 } foreach (_logic call bis_fnc_moduleTriggers);
+
+publicVariable QGVAR(objectiveTriggers);

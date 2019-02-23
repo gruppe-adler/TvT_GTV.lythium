@@ -1,6 +1,5 @@
 #include "component.hpp"
 
-
 params ["_civ","_killer"];
 
 systemChat "civ killed";
