@@ -17,7 +17,7 @@ class CfgGradCivs {
     exitOn = "";                                                                    // Skriptbedingung, ab der keine weiteren Zivilisten mehr spawnen
     onSpawn = "";                                                                   // Code, der ausgeführt wird, wenn ein Zivilist spawnt
     onHeldUp = "";                                                                  // Code, der ausgeführt wird, wenn ein Zivilist angehalten wird (Spieler zeigt mit Waffe auf Zivilist)
-
+    onKilled = "_this call gtv_objectives_fnc_onCivKilled";
 
     maxCivsOnFoot = 60;                                                             // maximale Anzahl an Zivilisten zu Fuß
     maxCivsInVehicles = 10;                                                         // maximale Anzahl an Zivilisten in Fahrzeugen

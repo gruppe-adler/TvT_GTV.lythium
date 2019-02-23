@@ -9,6 +9,7 @@ class gtv_objectives {
         class createTaskWest {};
         class handleUnitKilled {};
         class initTrigger {};
+        class onCivKilled {};
         class onObjectiveCompleted {};
         class onPlayerKilled {};
         class onTriggerActivated {};

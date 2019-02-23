@@ -7,6 +7,8 @@ class cfgMission {
     vipObjectiveShotsDetectionRadius = 250;                                     // Entfernung in Metern, in der Opfor-Schüsse zum Taskabbruch führen
     vipBaseTaskTimeout = 10;                                                   // Zeit in Sekunden, die der VIP zum Schluss der Mission in seiner Basis verbringen muss, bevor Blufor gewinnt.
 
+    civsKilledThreshold = 3;                                                    // Anzahl an durch Blufor getöteten Zivilisten, bei der Opfor das Spiel gewinnt
+
     loadoutFactionBlu = "Blufor";
     loadoutFactionOpf = "Opfor";
 };

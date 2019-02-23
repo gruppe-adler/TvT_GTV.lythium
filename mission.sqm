@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1676;
+		nextID=1679;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=358;
+		nextID=368;
 	};
 	class Camera
 	{
@@ -3819,7 +3819,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=638;
+		items=640;
 		class Item0
 		{
 			dataType="Layer";
@@ -25245,16 +25245,42 @@ class Mission
 			type="Logic";
 			atlOffset=1.9073486e-006;
 		};
+		class Item638
+		{
+			dataType="Trigger";
+			position[]={12685.725,41.302376,4015.0085};
+			angle=0.54080766;
+			class Attributes
+			{
+				sizeA=2500;
+				sizeB=3000;
+			};
+			id=1677;
+			type="EmptyDetector";
+			atlOffset=22.140934;
+		};
+		class Item639
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15891.594,27.424286,4020.6631};
+				angles[]={6.282208,0,6.2103181};
+			};
+			init="call{[this,60,true] call grad_civs_fnc_populateArea}";
+			id=1678;
+			type="Logic";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=38;
+			nextID=39;
 		};
 		class Links
 		{
-			items=38;
+			items=39;
 			class Item0
 			{
 				linkID=0;
@@ -25630,6 +25656,16 @@ class Mission
 				linkID=37;
 				item0=1660;
 				item1=121;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item38
+			{
+				linkID=38;
+				item0=1677;
+				item1=1678;
 				class CustomData
 				{
 					type="Sync";
