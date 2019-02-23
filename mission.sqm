@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=348;
+		nextID=358;
 	};
 	class Camera
 	{
-		pos[]={11235.684,34.659561,5622.6514};
-		dir[]={-0.36321151,-0.62709379,-0.68908489};
-		up[]={-0.29240635,0.77894253,-0.55475235};
-		aside[]={-0.88463825,-5.6112185e-008,0.46628666};
+		pos[]={13989.197,37.015247,3377.0691};
+		dir[]={-0.38409686,-0.67153633,0.63364935};
+		up[]={-0.34810257,0.74097121,0.57426941};
+		aside[]={0.85515857,-2.2235326e-008,0.51836807};
 	};
 };
 binarizationWanted=0;
@@ -22904,6 +22904,7 @@ class Mission
 							class Attributes
 							{
 								rank="MAJOR";
+								init="call{[this] call gtv_objectives_fnc_addVipKilledEH}";
 								name="gtv_vip";
 								description="VIP@VIP";
 								isPlayer=1;
