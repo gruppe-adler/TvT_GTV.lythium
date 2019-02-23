@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=398;
+		nextID=388;
 	};
 	class Camera
 	{
 		pos[]={13978.475,21.937716,3387.7041};
-		dir[]={0.84382659,-0.34354076,0.41247988};
-		up[]={0.30876431,0.93907338,0.15092689};
-		aside[]={0.4391951,-1.0144431e-006,-0.89849263};
+		dir[]={0.92764467,-0.27852702,0.24920048};
+		up[]={0.26913431,0.96037108,0.072296351};
+		aside[]={0.25945714,-1.4228863e-006,-0.96584845};
 	};
 };
 binarizationWanted=0;
@@ -24783,7 +24783,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={10781.666,28.755535,2757.7119};
-					angle=2.8322854;
+					angle=2.8322852;
 					class Attributes
 					{
 						condition="";
@@ -24791,6 +24791,7 @@ class Mission
 						sizeB=2;
 						sizeC=2;
 						isRectangle=1;
+						isServerOnly=1;
 						effectVoice="FD_Finish_F";
 						effectSoundEnvironment="Hills";
 						effectTitle="RscInterlacing";
@@ -24809,6 +24810,7 @@ class Mission
 						sizeA=4.1999998;
 						sizeB=2;
 						isRectangle=1;
+						isServerOnly=1;
 					};
 					id=1671;
 					type="EmptyDetectorAreaR50";
@@ -24824,6 +24826,7 @@ class Mission
 						sizeA=4;
 						sizeB=4;
 						isRectangle=1;
+						isServerOnly=1;
 						effectVoice="FD_Finish_F";
 						effectSoundEnvironment="Hills";
 						effectTitle="RscInterlacing";
@@ -24844,6 +24847,7 @@ class Mission
 						sizeB=4;
 						sizeC=3;
 						isRectangle=1;
+						isServerOnly=1;
 						effectVoice="FD_Finish_F";
 						effectSoundEnvironment="Hills";
 						effectTitle="RscInterlacing";
@@ -24931,13 +24935,14 @@ class Mission
 		class Item634
 		{
 			dataType="Trigger";
-			position[]={13969.419,19.723997,3407.4189};
+			position[]={13969.419,19.723991,3407.4194};
 			angle=2.3059814;
 			class Attributes
 			{
 				sizeA=21;
 				sizeB=49;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=1673;
 			type="EmptyDetectorAreaR50";
