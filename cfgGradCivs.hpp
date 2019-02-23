@@ -11,7 +11,7 @@ class CfgGradCivs {
     enableOnFoot = 1;                                                               // Zivilisten, die durch die Gegend laufen, einschalten (0/1)
     enableInVehicles = 1;                                                           // Fahrzeugfahrende Zivilisten einschalten (0/1)
 
-    maxCivs = 40;                                                                   // maximale Anzahl an Zivilisten
+    maxCivs = 4;                                                                   // maximale Anzahl an Zivilisten
     spawnDistances[] = {1000,2500};                                                 // Mindest- und Maximalabstand zu allen Spielern, in denen Zivilisten spawnen
     backpackProbability = 0.15;                                                     // Wahrscheinlichkeit, dass Zivilisten mit Backpacks spawnen (0-1)
     exitOn = "";                                                                    // Skriptbedingung, ab der keine weiteren Zivilisten mehr spawnen
