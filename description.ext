@@ -112,6 +112,7 @@ class CfgGradFortifications {
             canDemolish = 0;
             onBuildComplete = "_this call gtv_recon_fnc_initUAV";
             minHeight = -0.1;
+            canFloat = 1;
         };
 
         class O_UAV_01_F {
@@ -119,6 +120,7 @@ class CfgGradFortifications {
             canDemolish = 0;
             onBuildComplete = "_this call gtv_recon_fnc_initUAV";
             minHeight = -0.1;
+            canFloat = 1;
         };
     };
 };
