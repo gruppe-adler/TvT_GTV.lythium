@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=418;
+		nextID=428;
 	};
 	class Camera
 	{
-		pos[]={13977.326,22.521816,3387.0718};
-		dir[]={0.79059118,-0.42591998,0.44018361};
-		up[]={0.37223503,0.90468919,0.20724872};
-		aside[]={0.48649797,-4.5931665e-007,-0.87378603};
+		pos[]={11206.707,15.92467,5595.0142};
+		dir[]={0.29326895,-0.52421623,0.79951346};
+		up[]={0.18052873,0.85157734,0.49216059};
+		aside[]={0.93884593,-2.3283064e-008,-0.34437597};
 	};
 };
 binarizationWanted=0;
@@ -24094,12 +24094,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={11209.146,10.134153,5611.1592};
+								position[]={11209.146,10.134114,5611.1587};
 							};
 							side="East";
 							flags=7;
 							class Attributes
 							{
+								init="call{[this,5] call gtv_digger_fnc_addInteractions}";
 								description="Zugführer";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -24159,7 +24160,6 @@ class Mission
 							};
 							id=266;
 							type="O_Soldier_SL_F";
-							atlOffset=2.5749207e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24490,7 +24490,6 @@ class Mission
 					{
 					};
 					id=265;
-					atlOffset=2.5749207e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24722,7 +24721,7 @@ class Mission
 				};
 			};
 			id=1662;
-			atlOffset=-0.0141716;
+			atlOffset=-0.014181137;
 		};
 		class Item632
 		{
