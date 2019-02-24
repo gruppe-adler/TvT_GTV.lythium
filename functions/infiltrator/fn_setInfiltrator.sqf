@@ -3,10 +3,8 @@
 params ["_unit"];
 
 if (isNull _unit) exitWith {
-    [{!isNull _unit},{[_unit] call FUNC(setDigger)},_unit] call CBA_fnc_waitUntilAndExecute;
+    [{!isNull _unit},{[_this] call FUNC(setDigger)},_unit] call CBA_fnc_waitUntilAndExecute;
 };
-
-if (!local _unit) exitWith {};
 
 // main node
 private _action = [QGVAR(actionMainNode),"Disguise","",{true},{true}] call ace_interact_menu_fnc_createAction;
