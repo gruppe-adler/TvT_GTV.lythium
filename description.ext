@@ -86,6 +86,41 @@ class Loadouts {
     };
 };
 
+//GRAD FORTIFICATIONS ==========================================================
+class CfgGradFortifications {
+    canDemolishDefault = 0;
+    demolitionTimeFactor = 1;
+    playerInventorySize = 500;
+    vehicleInventorySizeFactor = 2;
+
+    class Fortifications {
+        class Land_SewerCover_03_F {
+            canPlaceOnRoad = 0;
+            canPackUp = 0;
+            surfaceNormal = 1;
+            surfaceNormalForced = 1;
+            minHeight = 0.0;
+            onBuildComplete = "_this call gtv_digger_fnc_initTunnelEntrance";
+            condition = "_this call gtv_digger_fnc_checkObjectiveDistance";
+            conditionHint = "TOO CLOSE TO OBJ.";
+        };
+
+        class O_Static_Designator_02_F {
+            canPackUp = 0;
+            canDemolish = 0;
+            onBuildComplete = "_this call gtv_recon_fnc_initUAV";
+            minHeight = -0.1;
+        };
+
+        class O_UAV_01_F {
+            canPackUp = 0;
+            canDemolish = 0;
+            onBuildComplete = "_this call gtv_recon_fnc_initUAV";
+            minHeight = -0.1;
+        };
+    };
+};
+
 //XEHs =========================================================================
 /* class Extended_Killed_EventHandlers {
     class CAManBase {
@@ -94,3 +129,11 @@ class Loadouts {
         };
     };
 }; */
+
+class Extended_WeaponAssembled_EventHandlers {
+    class CAManBase {
+        class gtv_recon_uavAssembled {
+            weaponAssembled = "_this call gtv_recon_fnc_uavAssembled";
+        };
+    };
+};

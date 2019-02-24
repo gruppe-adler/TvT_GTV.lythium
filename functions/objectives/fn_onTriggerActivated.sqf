@@ -5,6 +5,8 @@ params ["_trigger","_thisList"];
 private _handle = _trigger getVariable QGVAR(timeoutHandle);
 if (!isNil "_handle") exitWith {};
 
+["gtv_notification1",["Entered objective","You are now working on completing your objective."]] remoteExec ["BIS_fnc_showNotification",missionNamespace getVariable ["gtv_vip",objNull],false];
+
 _handle = [{
     params ["_trigger","_handle"];
 
