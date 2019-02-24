@@ -11,7 +11,7 @@ private _fnc_condition = {
 private _fnc_insertChildren = {
     params ["_target","_player"];
 
-    private _otherEntrances = GVAR(allTunnelEntrances) - [_target];
+    private _otherEntrances = GVAR(allTunnelEntrances) - [_target,objNull];
     private _actions = [];
     {
         private _tunnelEntranceName = _x getVariable [QGVAR(tunnelEntranceName),"ERROR: NO NAME"];
@@ -29,7 +29,7 @@ private _fnc_insertChildren = {
 private _fnc_modifier = {
         params ["_target","_player","","_actionData"];
 
-        private _otherEntrancesCount = count (GVAR(allTunnelEntrances) - [_target]);
+        private _otherEntrancesCount = count (GVAR(allTunnelEntrances) - [_target,objNull]);
         private _actionDescription = if (_otherEntrancesCount > 0) then {"Tunnel network"} else {"Tunnel network (not connected)"};
         _actionData set [1,_actionDescription];
 };
