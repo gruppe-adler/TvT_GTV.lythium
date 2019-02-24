@@ -2,8 +2,6 @@
 
 params ["_civ","_killer"];
 
-systemChat "civ killed";
-
 if (!local _civ) exitWith {};
 
 private _dmgSide = side (group _killer);

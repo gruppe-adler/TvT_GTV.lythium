@@ -11,6 +11,9 @@ class cfgMission {
 
     civsKilledThreshold = 3;                                                    // Anzahl an durch Blufor getöteten Zivilisten, bei der Opfor das Spiel gewinnt
 
+    diggerTunnelAmount = 3;                                                     // Anzahl an Tunneln, die der Digger bauen kann
+    diggerTunnelMinDistToObj = 300;                                             // Mindestabstand zu Zielpunkten, ab der der Digger Tunnel bauen kann
+
     loadoutFactionBlu = "Blufor";
     loadoutFactionOpf = "Opfor";
 };

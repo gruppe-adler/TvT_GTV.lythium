@@ -1,5 +1,6 @@
 class CfgFunctions {
 	#include "functions\common\cfgFunctions.hpp"
+    #include "functions\digger\cfgFunctions.hpp"
     #include "functions\endings\cfgFunctions.hpp"
 	#include "functions\groupSettings\cfgFunctions.hpp"
 	#include "functions\missionSetup\cfgFunctions.hpp"

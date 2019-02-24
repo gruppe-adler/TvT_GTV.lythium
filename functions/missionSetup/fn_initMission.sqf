@@ -35,5 +35,9 @@ if (hasInterface) then {
             player addEventHandler ["Fired",{_this call EFUNC(objectives,onOpforPlayerFired)}];
         };
 
+        if (playerSide == WEST) then {
+            [player,true] call grad_fortifications_fnc_allowDemolition;
+        };
+
     },[]] call CBA_fnc_waitUntilAndExecute;
 };
