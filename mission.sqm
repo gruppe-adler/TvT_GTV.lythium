@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=448;
+		nextID=478;
 	};
 	class Camera
 	{
-		pos[]={11232.407,15.875216,5607.2617};
-		dir[]={-0.80062699,-0.30787763,-0.51407564};
-		up[]={-0.25909761,0.95140964,-0.16636501};
-		aside[]={-0.54031783,-9.8370947e-008,0.84149915};
+		pos[]={11230.977,18.038525,5618.0313};
+		dir[]={-0.51486975,-0.36678934,-0.77488178};
+		up[]={-0.20300502,0.93028682,-0.30552483};
+		aside[]={-0.8329283,1.0011718e-008,0.55344069};
 	};
 };
 binarizationWanted=0;
@@ -24001,7 +24001,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="call{[this,5] call gtv_digger_fnc_addInteractions}";
+								init="call{[this] call gtv_digger_fnc_setDigger}";
 								description="Digger@Digger";
 								isPlayable=1;
 							};
