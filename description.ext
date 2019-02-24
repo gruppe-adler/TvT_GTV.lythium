@@ -95,6 +95,8 @@ class CfgGradFortifications {
 
     class Fortifications {
         class Land_SewerCover_03_F {
+            buildTime = 20;
+            demolitionTime = 40;
             canPlaceOnRoad = 0;
             canPackUp = 0;
             surfaceNormal = 1;
