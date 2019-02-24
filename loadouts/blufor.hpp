@@ -69,6 +69,12 @@ class blufor {
         };
 
 
+        class Soldier_TL_F:Soldier_F
+        {};
+
+        class Soldier_SL_F:Soldier_F
+        {};
+
         class officer_F {
             uniform = "rhssaf_uniform_m10_digital_desert";
             vest = "LOP_V_Carrier_BLK";
