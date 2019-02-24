@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1696;
+		nextID=1698;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=488;
+		nextID=498;
 	};
 	class Camera
 	{
@@ -3819,7 +3819,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=650;
+		items=652;
 		class Item0
 		{
 			dataType="Layer";
@@ -25985,16 +25985,41 @@ class Mission
 			id=1695;
 			atlOffset=-9.5367432e-007;
 		};
+		class Item650
+		{
+			dataType="Trigger";
+			position[]={12947.96,20.621496,4311.6855};
+			class Attributes
+			{
+				sizeA=3500;
+				sizeB=3500;
+				isRectangle=1;
+			};
+			id=1696;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item651
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12937.657,147.83751,8885.9629};
+				angles[]={6.2003746,0,0.18872584};
+			};
+			init="call{[this] call gtv_common_fnc_coverMap}";
+			id=1697;
+			type="LocationArea_F";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=39;
+			nextID=40;
 		};
 		class Links
 		{
-			items=39;
+			items=40;
 			class Item0
 			{
 				linkID=0;
@@ -26380,6 +26405,16 @@ class Mission
 				linkID=38;
 				item0=1677;
 				item1=1678;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item39
+			{
+				linkID=39;
+				item0=1697;
+				item1=1696;
 				class CustomData
 				{
 					type="Sync";
