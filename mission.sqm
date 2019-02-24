@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=498;
+		nextID=548;
 	};
 	class Camera
 	{
 		pos[]={11230.977,18.038525,5618.0313};
-		dir[]={-0.51486975,-0.36678934,-0.77488178};
-		up[]={-0.20300502,0.93028682,-0.30552483};
-		aside[]={-0.8329283,1.0011718e-008,0.55344069};
+		dir[]={-0.66095346,-0.28602305,-0.69382948};
+		up[]={-0.19730636,0.95820707,-0.20712143};
+		aside[]={-0.72407591,-1.3882527e-007,0.68976885};
 	};
 };
 binarizationWanted=0;
@@ -24947,7 +24947,7 @@ class Mission
 				position[]={15891.594,27.424286,4020.6631};
 				angles[]={6.282208,0,6.2103181};
 			};
-			init="call{[this,30,true] call grad_civs_fnc_populateArea}";
+			init="call{[this,45,true,true,25] call grad_civs_fnc_populateArea}";
 			id=1678;
 			type="Logic";
 		};
