@@ -135,5 +135,35 @@ class Opfor {
                 LIST_3("rhs_mag_9x18_8_57N181S")
             };
 		};
-	};
+        class Soldier_AHAT_F {
+            uniform = "LOP_U_AM_Fatigue_02_5";
+            vest = "rhs_6sh92_vog";
+            backpack = "B_AssaultPack_rgr";
+            headgear = "rds_Villager_cap1";
+            primaryWeapon = "rhs_weap_aks74u";
+            primaryWeaponMagazine = "rhs_30Rnd_545x39_7N6M_AK";
+            primaryWeaponMuzzle = "rhs_acc_pgs64_74u";
+            handgunWeapon = "rhs_weap_6p53";
+            handgunWeaponMagazine = "rhs_18rnd_9x21mm_7N28";
+            binoculars = "Binocular";
+            map = "ItemMap";
+            compass = "ItemCompass";
+            watch = "ItemWatch";
+            gps = "ItemGPS";
+            radio = "TFAR_fadak";
+            nvgoggles = "";
+            addItemsToUniform[] = {
+                LIST_4("rhs_30Rnd_545x39_7N6M_AK"),
+                LIST_2("rhs_18rnd_9x21mm_7N28")
+            };
+            addItemsToVest[] = {
+                LIST_2("rhs_30Rnd_545x39_7N6M_AK")
+            };
+            addItemsToBackpack[] = {
+                LIST_2("rhs_mag_mine_ptm1"),
+                LIST_2("rhssaf_mag_brd_m83_white")
+            };
+        };
+    };
 };
+
