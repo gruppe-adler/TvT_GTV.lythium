@@ -36,6 +36,8 @@ class Opfor {
     };
 
     class Type {
+
+        // DIGGER
         class Soldier_A_F {
             uniform = "LOP_U_AM_Fatigue_04";
             vest = "rhs_6sh92_vsr_vog";
@@ -54,10 +56,12 @@ class Opfor {
                 LIST_7("rhsgref_25Rnd_792x33_SmE_StG")
             };
     	};
+
+        // RECON
         class Soldier_AAR_F {
             uniform = "LOP_U_AM_Fatigue_03";
             vest = "rhs_6sh92_vog";
-            backpack = "C_IDAP_UAV_01_backpack_F";
+            backpack = "";
             headgear = "rds_Villager_cap1";
             primaryWeapon = "rhs_weap_aks74u";
             primaryWeaponMagazine = "rhs_30Rnd_545x39_7N6M_AK";
@@ -67,7 +71,7 @@ class Opfor {
             map = "ItemMap";
             compass = "ItemCompass";
             watch = "ItemWatch";
-            gps = "C_UavTerminal";
+            gps = "O_UavTerminal";
             radio = "TFAR_fadak";
             nvgoggles = "";
             addItemsToUniform[] = {
@@ -77,6 +81,8 @@ class Opfor {
                 LIST_2("rhs_30Rnd_545x39_7N6M_AK")
             };
         };
+
+        // INFILTRATOR
         class support_AMG_F {
             uniform = "LOP_U_TAK_Civ_Fatigue_16";
             vest = "LOP_6sh46";
@@ -98,6 +104,8 @@ class Opfor {
                 LIST_4("rhsgref_30rnd_1143x23_M1911B_SMG")
             };
         };
+
+        // HEAVY
         class support_AMort_F {
             uniform = "LOP_U_AM_Fatigue_04";
             vest = "rhs_6sh92_vsr_vog";

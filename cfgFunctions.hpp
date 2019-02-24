@@ -6,6 +6,7 @@ class CfgFunctions {
     #include "functions\infiltrator\cfgFunctions.hpp"
 	#include "functions\missionSetup\cfgFunctions.hpp"
     #include "functions\objectives\cfgFunctions.hpp"
+    #include "functions\recon\cfgFunctions.hpp"
 
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1698;
+		nextID=1700;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=558;
+		nextID=588;
 	};
 	class Camera
 	{
-		pos[]={11230.977,18.038525,5618.0313};
-		dir[]={-0.66095346,-0.28602305,-0.69382948};
-		up[]={-0.19730636,0.95820707,-0.20712143};
-		aside[]={-0.72407591,-1.3882527e-007,0.68976885};
+		pos[]={11232.15,21.351107,5615.7183};
+		dir[]={-0.63562316,-0.53627193,-0.55539966};
+		up[]={-0.40384358,0.84402758,-0.35287446};
+		aside[]={-0.65801084,2.796296e-007,0.75305754};
 	};
 };
 binarizationWanted=0;
@@ -25769,6 +25769,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="call{[this] call gtv_recon_fnc_setRecon}";
 						description="Recon@Recon";
 						isPlayable=1;
 					};

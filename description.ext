@@ -104,6 +104,20 @@ class CfgGradFortifications {
             condition = "_this call gtv_digger_fnc_checkObjectiveDistance";
             conditionHint = "TOO CLOSE TO OBJ.";
         };
+
+        class O_Static_Designator_02_F {
+            canPackUp = 0;
+            canDemolish = 0;
+            onBuildComplete = "_this call gtv_recon_fnc_initUAV";
+            minHeight = -0.1;
+        };
+
+        class O_UAV_01_F {
+            canPackUp = 0;
+            canDemolish = 0;
+            onBuildComplete = "_this call gtv_recon_fnc_initUAV";
+            minHeight = -0.1;
+        };
     };
 };
 
@@ -115,3 +129,11 @@ class CfgGradFortifications {
         };
     };
 }; */
+
+class Extended_WeaponAssembled_EventHandlers {
+    class CAManBase {
+        class gtv_recon_uavAssembled {
+            weaponAssembled = "_this call gtv_recon_fnc_uavAssembled";
+        };
+    };
+};
