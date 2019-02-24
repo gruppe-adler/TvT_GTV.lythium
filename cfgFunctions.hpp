@@ -3,6 +3,7 @@ class CfgFunctions {
     #include "functions\digger\cfgFunctions.hpp"
     #include "functions\endings\cfgFunctions.hpp"
 	#include "functions\groupSettings\cfgFunctions.hpp"
+    #include "functions\infiltrator\cfgFunctions.hpp"
 	#include "functions\missionSetup\cfgFunctions.hpp"
     #include "functions\objectives\cfgFunctions.hpp"
 
