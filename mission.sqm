@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=478;
+		nextID=488;
 	};
 	class Camera
 	{
@@ -25782,6 +25782,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="call{[this] call gtv_infiltrator_fnc_setInfiltrator}";
 						description="Infiltrator@Infiltrator";
 						isPlayable=1;
 					};
