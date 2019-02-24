@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=548;
+		nextID=558;
 	};
 	class Camera
 	{
@@ -724,7 +724,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=51;
+									items=52;
 									class Item0
 									{
 										class data
@@ -1439,6 +1439,20 @@ class CustomAttributes
 											value="tfar_givelongrangeradiotogroupleaders";
 										};
 									};
+									class Item51
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_bft_hideaigroups";
+										};
+									};
 								};
 							};
 						};
@@ -1455,7 +1469,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=51;
+									items=52;
 									class Item0
 									{
 										class data
@@ -3732,6 +3746,51 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item51
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1

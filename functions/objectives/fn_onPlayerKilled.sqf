@@ -9,7 +9,7 @@ private _killer = _player getVariable ["ace_medical_lastDamageSource", objNull];
 
 // killed by unknown
 private _killerSide = side _killer;
-if !(_killerSide in [WEST,EAST,INDEPENDENT]) exitWith {};
+if !(_killerSide in [WEST,EAST,INDEPENDENT,CIVILIAN]) exitWith {};
 
 // killed by team
 if (playerSide == _killerSide) exitWith {};
