@@ -35,6 +35,9 @@ class blufor {
         radio = "";
     };
 
+
+//UN SOLDAT
+
     class Type {
         class Soldier_F
         {
@@ -55,25 +58,34 @@ class blufor {
             watch = "ItemWatch";
             gps = "ItemGPS";
             radio = "ItemRadio";
-            goggles = "rhsusf_oakley_goggles_clr";
             nvgoggles = "";
             addItemsToUniform[] = {
-                LIST_7("rhssaf_30rnd_556x45_EPR_G36"),
-                LIST_2("11Rnd_45ACP_Mag")
+                LIST_1("ACE_epinephrine"),
+                LIST_8("ACE_morphine"),
+                LIST_15("ACE_fieldDressing"),
+                LIST_1("ACE_MapTools")
             };
             addItemsToVest[] = {
                 LIST_1("rhssaf_mag_brd_m83_red"),
-                LIST_1("rhssaf_mag_brd_m83_blue"),
-                LIST_1("rhssaf_mag_brd_m83_green")
+                LIST_1("rhssaf_mag_brd_m83_green"),
+                LIST_6("rhssaf_30rnd_556x45_EPR_G36"),
+                LIST_1("11Rnd_45ACP_Mag"),
+                LIST_1("rhssaf_mag_brd_m83_white"),
+                LIST_1("rhssaf_mag_brd_m83_blue")
             };
         };
 
+//UN TL
 
         class Soldier_TL_F:Soldier_F
         {};
 
+//UN SQL
+
         class Soldier_SL_F:Soldier_F
         {};
+
+//UN VIP
 
         class officer_F {
             uniform = "rhssaf_uniform_m10_digital_desert";
@@ -98,3 +110,8 @@ class blufor {
         };
     };
 };
+
+
+
+
+
