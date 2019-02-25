@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=640;
+		nextID=673;
 	};
 	class Camera
 	{
-		pos[]={12729.307,35.952396,3713.9617};
-		dir[]={0.029838413,-0.56780422,0.82265615};
-		up[]={0.02058221,0.82314807,0.56745493};
-		aside[]={0.99936634,-1.4272518e-007,-0.036248446};
+		pos[]={14033.602,181.4864,3173.7332};
+		dir[]={0.1126831,-0.55508387,0.82413864};
+		up[]={0.0751964,0.83179247,0.54996866};
+		aside[]={0.99079031,1.8192804e-007,-0.13546908};
 	};
 };
 binarizationWanted=0;
@@ -25446,7 +25446,7 @@ class Mission
 						position[]={10781.593,26.03755,3020.3059};
 						angles[]={0.016126843,0,0.0036302849};
 					};
-					init="call{[this,10,""Örtlicher Arzt"",""Örtlichen Arzt medizinische Hilfe zusprechen"",""heal""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,140,""Örtlicher Arzt"",""Örtlichen Arzt medizinische Hilfe zusprechen"",""heal""] call gtv_objectives_fnc_createObjective;}";
 					id=1663;
 					type="Logic";
 				};
@@ -25458,7 +25458,7 @@ class Mission
 						position[]={13804.116,27.0424,2246.2219};
 						angles[]={5.7289038,0,0.4700346};
 					};
-					init="call{[this,10,""Bürgermeister"",""Aktuelles Drogenproblem in der Region mit dem Bürgermeister besprechen. Man munkelt dieser raucht auch gerne den einen oder anderen Joint."",""meet""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,180,""Bürgermeister"",""Aktuelles Drogenproblem in der Region mit dem Bürgermeister besprechen. Man munkelt dieser raucht auch gerne den einen oder anderen Joint."",""meet""] call gtv_objectives_fnc_createObjective;}";
 					id=1667;
 					type="Logic";
 				};
@@ -25470,7 +25470,7 @@ class Mission
 						position[]={14924.269,23.737064,5531.2651};
 						angles[]={6.1060691,0,6.0027804};
 					};
-					init="call{[this,10,""Angehörige"",""Mit Angehörigen sprechen."",""help""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,180,""Angehörige"",""Mit Angehörigen sprechen."",""help""] call gtv_objectives_fnc_createObjective;}";
 					id=1668;
 					type="Logic";
 				};
@@ -25482,7 +25482,7 @@ class Mission
 						position[]={11980.232,21.380308,6362.2422};
 						angles[]={0.044331361,0,6.282208};
 					};
-					init="call{[this,10,""Fabrik"",""Rede über Wiederaufbauarbeiten halten."",""container""] call gtv_objectives_fnc_createObjective;}";
+					init="call{[this,150,""Fabrik"",""Rede über Wiederaufbauarbeiten halten."",""container""] call gtv_objectives_fnc_createObjective;}";
 					id=1669;
 					type="Logic";
 				};
