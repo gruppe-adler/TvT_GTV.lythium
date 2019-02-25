@@ -117,7 +117,7 @@ class Opfor {
             secondaryWeaponMagazine = "rhs_panzerfaust60_mag";
             handgunWeapon = "rhs_weap_pb_6p9";
             handgunWeaponMagazine = "rhs_mag_9x18_8_57N181S";
-            handgunWeaponMuzzle = "rhs_acc_6p9_suppressor";
+            handgunWeaponMuzzle = "";
             binoculars = "rhssaf_zrak_rd7j";
             map = "ItemMap";
             compass = "ItemCompass";
@@ -166,4 +166,3 @@ class Opfor {
         };
     };
 };
-
