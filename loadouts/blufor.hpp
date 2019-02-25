@@ -32,7 +32,7 @@ class blufor {
         gps = "";
         compass = "";
         watch = "";
-        radio = "";
+        radio = "TFAR_anprc152";
     };
 
 
@@ -57,7 +57,6 @@ class blufor {
             compass = "ItemCompass";
             watch = "ItemWatch";
             gps = "ItemGPS";
-            radio = "ItemRadio";
             nvgoggles = "";
             addItemsToUniform[] = {
                 LIST_1("ACE_epinephrine"),
@@ -104,7 +103,6 @@ class blufor {
             compass = "ItemCompass";
             watch = "ItemWatch";
             gps = "ItemGPS";
-            radio = "ItemRadio";
             nvgoggles = "";
             addItemsToUniform[] = {
                 LIST_1("ACE_epinephrine"),
@@ -140,7 +138,6 @@ class blufor {
             compass = "ItemCompass";
             watch = "ItemWatch";
             gps = "ItemGPS";
-            radio = "ItemRadio";
             nvgoggles = "";
             addItemsToUniform[] = {
                 LIST_1("ACE_epinephrine"),
@@ -156,11 +153,3 @@ class blufor {
         };
     };
 };
-
-
-
-
-
-
-
-
