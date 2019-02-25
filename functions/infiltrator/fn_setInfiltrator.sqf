@@ -6,6 +6,11 @@ if (isNull _unit) exitWith {
     [{!isNull _unit},{[_this] call FUNC(setDigger)},_unit] call CBA_fnc_waitUntilAndExecute;
 };
 
+if (isServer) then {
+    if (isNil QGVAR(allInfiltrators)) then {GVAR(allInfiltrators) = []};
+    GVAR(allInfiltrators) pushBack _unit;
+};
+
 // main node
 private _action = [QGVAR(actionMainNode),"Disguise","",{true},{true}] call ace_interact_menu_fnc_createAction;
 [_unit,1,["ACE_SelfActions"],_action] call ace_interact_menu_fnc_addActionToObject;

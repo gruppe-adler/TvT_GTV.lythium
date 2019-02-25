@@ -6,10 +6,9 @@ if (!isServer) exitWith {};
     params ["","_handle"];
 
     private _unitCount = {
-        side _x == EAST &&
-        {alive _x} &&
+        alive _x &&
         {!(_x getVariable ["ace_isUnconscious",false])}
-    } count playableUnits;
+    } count ((playableUnits select {side _x == EAST}) + EGVAR(infiltrator,allInfiltrators));
 
     if (_unitCount == 0) exitWith {
         [_handle] call CBA_fnc_removePerFrameHandler;
@@ -20,10 +19,9 @@ if (!isServer) exitWith {};
             _args params ["_downSince"];
 
             private _unitCount = {
-                side _x == EAST &&
-                {alive _x} &&
+                alive _x &&
                 {!(_x getVariable ["ace_isUnconscious",false])}
-            } count playableUnits;
+            } count ((playableUnits select {side _x == EAST}) + EGVAR(infiltrator,allInfiltrators));
 
             if (_unitCount > 0) exitWith {
                 [_handle] call CBA_fnc_removePerFrameHandler;
